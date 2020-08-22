@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+  
+<tiles-definitions>
+
+	<definition name="mainLayout" template="/WEB-INF/pages/layout/main.jsp">
+		<put-attribute name="header" value="/WEB-INF/pages/layout/header.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/pages/layout/footer.jsp" />
+    </definition>
+
+	<definition name="home" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+	
+	<definition name="doctor" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/pages/config/doctorsList.jsp" />
+	</definition>
+
+	<definition name="userList" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/pages/config/usersList.jsp" />
+	</definition>
+	
+	<definition name="recepList" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/pages/config/receptionistsList.jsp" />
+	</definition>
+</tiles-definitions>
