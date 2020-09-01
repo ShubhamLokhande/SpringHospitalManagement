@@ -16,7 +16,7 @@ public interface DoctorRepository extends JpaRepository<Doctor, Long> {
 
 	@Modifying
 	@Query("update Doctor d set d.status = ?1 where d.doctorId = ?2")
-	int setStatusForDoctorId(boolean status, Long doctorId);
+	void setStatusForDoctorId(boolean status, Long doctorId);
 
 	List<Doctor> getDoctorByStatus(boolean status);
 	

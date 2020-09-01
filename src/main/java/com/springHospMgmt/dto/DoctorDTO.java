@@ -1,11 +1,14 @@
 package com.springHospMgmt.dto;
 
+import java.io.Serializable;
+
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 @JsonInclude(Include.NON_NULL)
-public class DoctorDTO {
+public class DoctorDTO implements Serializable{
 
+	private static final long serialVersionUID = -8170719476836894242L;
 	private long doctorId;
 	private String name;
 	private String email;

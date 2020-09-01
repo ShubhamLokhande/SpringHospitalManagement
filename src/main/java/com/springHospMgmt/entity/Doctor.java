@@ -18,28 +18,28 @@ public class Doctor {
 	@Column(name = "DOC_ID")
 	private long doctorId;
 	
-	@Column(name = "DOC_NAME", nullable = false)
+	@Column(name = "NAME", nullable = false)
 	private String name;
 	
-	@Column(name = "DOC_EMAIL", unique = true)
+	@Column(name = "EMAIL", unique = true)
 	private String email;
 	
-	@Column(name = "DOC_PASSWORD", nullable = false)
+	@Column(name = "PASSWORD", nullable = false)
 	private String password;
 	
-	@Column(name = "DOC_GENDER", nullable = true)
+	@Column(name = "GENDER", nullable = true)
 	private String gender;
 	
-	@Column(name = "DOC_QUALIFICATION", nullable = false)
+	@Column(name = "QUALIFICATION", nullable = false)
 	private String qual;
 	
-	@Column(name = "DOC_DATE_OF_BIRH", nullable = false)
+	@Column(name = "DATE_OF_BIRH", nullable = false)
 	private LocalDate dob;
 	
-	@Column(name = "DOC_EXPERT_IN", nullable = false)
+	@Column(name = "EXPERT_IN", nullable = false)
 	private String expertIn;
 	
-	@Column(name = "DOC_STATUS", nullable = true)
+	@Column(name = "STATUS", nullable = true)
 	private boolean status;
 //	
 //	@Column(name = "CREATED_ON", nullable = true)
