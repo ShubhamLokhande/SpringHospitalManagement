@@ -14,6 +14,16 @@ var Api = Api || (function(){
 			}
 		},
 		
+		showActiveUser : function(status){
+			if(status){
+				this.showHide('deletedUser','activeUser');
+				$("#newUser").show();
+			} else {
+				this.showHide('activeUser','deletedUser');
+				$("#newUser").hide();
+			}
+		},
+		
 		showHide : function(firstId, secondId){
 			$("#"+firstId).show();
 			$("#"+secondId).hide();

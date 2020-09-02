@@ -59,7 +59,7 @@ public class UserController {
 		String url = request.getServletPath();
 		if(url.startsWith("/user/listTrue")) {
 			return userService.getAllUserList(true);
-		} else if(url.startsWith("/doctor/listFalse")) {
+		} else if(url.startsWith("/user/listFalse")) {
 			return userService.getAllUserList(false);
 		} else {
 			System.out.println("Unable to fetch User List...");			//logger

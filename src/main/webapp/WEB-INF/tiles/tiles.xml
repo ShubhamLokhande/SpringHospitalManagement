@@ -18,7 +18,7 @@
 		<put-attribute name="body" value="/WEB-INF/pages/config/doctorsList.jsp" />
 	</definition>
 
-	<definition name="userList" extends="mainLayout">
+	<definition name="user" extends="mainLayout">
 		<put-attribute name="body" value="/WEB-INF/pages/config/usersList.jsp" />
 	</definition>
 	
