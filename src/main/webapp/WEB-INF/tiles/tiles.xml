@@ -22,7 +22,7 @@
 		<put-attribute name="body" value="/WEB-INF/pages/config/usersList.jsp" />
 	</definition>
 	
-	<definition name="recepList" extends="mainLayout">
-		<put-attribute name="body" value="/WEB-INF/pages/config/receptionistsList.jsp" />
+	<definition name="reception" extends="mainLayout">
+		<put-attribute name="body" value="/WEB-INF/pages/config/receptionsList.jsp" />
 	</definition>
 </tiles-definitions>

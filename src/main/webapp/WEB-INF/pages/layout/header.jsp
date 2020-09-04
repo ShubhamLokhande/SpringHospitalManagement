@@ -14,7 +14,7 @@
     				<a class="nav-link" href="doctor">Doctor</a>
     			</li>
           		<li class="nav-item">
-          			<a class="nav-link" href="#">Receptionist</a>
+          			<a class="nav-link" href="reception">Reception</a>
           		</li>
           		<li class="nav-item">
             		<a class="nav-link" href="user">User</a>

@@ -24,6 +24,16 @@ var Api = Api || (function(){
 			}
 		},
 		
+		showActiveRecep : function(status){
+			if(status){
+				this.showHide('deletedRecep','activeRecep');
+				$("#newRecep").show();
+			} else {
+				this.showHide('activeRecep','deletedRecep');
+				$("#newRecep").hide();
+			}
+		},
+		
 		showHide : function(firstId, secondId){
 			$("#"+firstId).show();
 			$("#"+secondId).hide();

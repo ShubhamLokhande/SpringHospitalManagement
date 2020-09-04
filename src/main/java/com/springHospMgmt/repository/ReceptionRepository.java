@@ -13,7 +13,7 @@ public interface ReceptionRepository extends JpaRepository<Reception, Long>{
 	Reception getReceptionByEmail(String email);
 
 	@Modifying
-	@Query("update Reception r set r.status = ?1 where r.userId = ?2")
+	@Query("update Reception r set r.status = ?1 where r.recepId = ?2")
 	void setStatusForRecepId(boolean status, long recepId);
 
 	List<Reception> getReceptionByStatus(boolean status);
