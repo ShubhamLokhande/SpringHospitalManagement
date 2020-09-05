@@ -87,7 +87,7 @@ var recepList = recepList || (function(){
 		},
 		
 		editReception : function(email){
-			recepList.clearModel();
+			recepList.clearModal();
 			$.ajax({
 				url : Api.prepareUrl('/reception/'+email),
 				method : 'POST',
@@ -104,7 +104,7 @@ var recepList = recepList || (function(){
 					$('input[name="inputQual"]').val(data.qual);
 					$('input[name="inputDob"]').val(data.dob);
 					$('input[name="inputMobileNo"]').val(data.mobileNo);
-					$('#receptionModel').modal('show');
+					$('#receptionModal').modal('show');
 				}
 			});
 		},
@@ -136,14 +136,14 @@ var recepList = recepList || (function(){
 				contentType: 'application/json; charset=utf-8',
 				data : JSON.stringify(recep),
 				success : function(data){
-					$('#receptionModel').modal('hide');
+					$('#receptionModal').modal('hide');
 					recepList.view('active');
-					recepList.clearModel();
+					recepList.clearModal();
 				}
 			});
 		},
 		
-		clearModel : function(){
+		clearModal : function(){
 			$('#inputRecepId').val('');
 			$('input[name="inputName"]').val('');
 			$('input[name="inputEmail"]').val('');

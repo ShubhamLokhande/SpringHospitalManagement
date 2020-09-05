@@ -1,32 +1,32 @@
-<div class="modal fade" id="recepModel" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade" id="doctorModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
 
     <div class="modal-content">
 <!-- Model Header Start Here -->
       <div class="mx-5">
         <div class="modal-header">
-          <h4 class="modal-title">New Reception Form</h4>
+          <h4 class="modal-title">New Doctor Form</h4>
         </div>
       </div>
 <!-- Model Header End Here -->
 
-      <form class="mx-5" id="ReceptionForm">
+      <form class="mx-5" id="DoctorForm">
 <!-- Model Body start here -->
         <div class="modal-body">
-          <input type="hidden" name="action" value="inputRecept">
-          <input type="hidden" name="inputUserId" id="inputReceptId">
+          <input type="hidden" name="action" value="inputDoctor">
+          <input type="hidden" name="inputDoctorId" id="inputDoctorId">
           <div class="form-group row">
             <label class="col-sm-3 col-form-label">Name</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" name="inputName" autocomplete="off" 
-                  placeholder="Enter Reception Name"/>
+                  placeholder="Enter Doctor Name"/>
             </div>
           </div>
           <div class="form-group row">
             <label class="col-sm-3 col-form-label">Email</label>
             <div class="col-sm-9">
               <input type="email" class="form-control" name="inputEmail" autocomplete="off"
-                  placeholder="Enter Reception Email"/>
+                  placeholder="Enter Doctor Email"/>
             </div>
           </div>
           <div class="form-group row">
@@ -55,7 +55,7 @@
             <label class="col-sm-3 col-form-label">Qualification</label>
             <div class="col-sm-9">
               <input type="text" class="form-control" name="inputQual" autocomplete="off"
-                  placeholder="Enter Reception Qualification"/>
+                  placeholder="Enter Doctor Qualification"/>
             </div>
           </div>
           <div class="form-group row">
@@ -65,10 +65,10 @@
             </div>
           </div>
           <div class="form-group row">
-            <label class="col-sm-3 col-form-label">Mobile Number</label>
+            <label class="col-sm-3 col-form-label">Specialization</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" name="inputMobileNo" autocomplete="off"
-                  placeholder="Enter Reception Mobile no."/>
+              <input type="text" class="form-control" name="inputExpertIn" autocomplete="off"
+                  placeholder="Enter Doctor Specialization"/>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
 
 <!-- model footer start here -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" onclick="recepList.save()">Save changes</button>
+          <button type="button" class="btn btn-primary" onclick="doctorList.save()">Save changes</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
 <!-- model footer end here -->

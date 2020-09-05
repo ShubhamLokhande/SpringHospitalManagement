@@ -88,7 +88,7 @@ var userList = userList || (function(){
 		},
 		
 		editUser : function(email){
-			userList.clearModel();
+			userList.clearModal();
 			$.ajax({
 				url : Api.prepareUrl('/user/'+email),
 				method : 'POST',
@@ -106,7 +106,7 @@ var userList = userList || (function(){
 					$('input[name="inputDob"]').val(data.dob);
 					$('input[name="inputMobileNo"]').val(data.mobileNo);
 					$('input[name="inputAddress"]').val(data.address);
-					$('#userModel').modal('show');
+					$('#userModal').modal('show');
 				}
 			});
 		},
@@ -140,14 +140,14 @@ var userList = userList || (function(){
 				contentType: 'application/json; charset=utf-8',
 				data : JSON.stringify(user),
 				success : function(data){
-					$('#userModel').modal('hide');
+					$('#userModal').modal('hide');
 					userList.view('active');
-					userList.clearModel();
+					userList.clearModal();
 				}
 			});
 		},
 		
-		clearModel : function(){
+		clearModal : function(){
 			$('#inputUserId').val('');
 			$('input[name="inputName"]').val('');
 			$('input[name="inputEmail"]').val('');

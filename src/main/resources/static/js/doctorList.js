@@ -87,7 +87,7 @@ var doctorList = doctorList || (function(){
 		},
 		
 		editDoc : function(email){
-			doctorList.clearModel();
+			doctorList.clearModal();
 			$.ajax({
 				url : Api.prepareUrl('/doctor/'+email),
 				method : 'POST',
@@ -104,7 +104,7 @@ var doctorList = doctorList || (function(){
 					$('input[name="inputQual"]').val(data.qual);
 					$('input[name="inputDob"]').val(data.dob);
 					$('input[name="inputExpertIn"]').val(data.expertIn);
-					$('#doctorModel').modal('show');
+					$('#doctorModal').modal('show');
 				}
 			});
 		},
@@ -136,14 +136,14 @@ var doctorList = doctorList || (function(){
 				contentType: 'application/json; charset=utf-8',
 				data : JSON.stringify(doctor),
 				success : function(data){
-					$('#doctorModel').modal('hide');
+					$('#doctorModal').modal('hide');
 					doctorList.view('active');
-					doctorList.clearModel();
+					doctorList.clearModal();
 				}
 			});
 		},
 		
-		clearModel : function(){
+		clearModal : function(){
 			$('#inputDoctorId').val('');
 			$('input[name="inputName"]').val('');
 			$('input[name="inputEmail"]').val('');

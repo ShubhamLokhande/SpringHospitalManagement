@@ -1,12 +1,12 @@
 <%@ include file = "../common/customBaseUrl.jsp" %>
-<%@ include file = "receptionModel.jsp" %>
+<%@ include file = "receptionModal.jsp" %>
 
 <div class="container my-3">
   <div class="row">
     <div class="col-sm-6"><h4>All Reception List</h4></div>
     <div class="col-sm-6 text-right">
         <button class="btn btn-success" type="button" class="" id="newRecep" data-toggle="modal" 
-            onclick="recepList.clearModel();" data-target="#recepModel">Add Reception</button>
+            onclick="recepList.clearModel();" data-target="#recepModal">Add Reception</button>
         <button class="btn btn-primary" id="deletedRecep" onclick="recepList.view('deleted')">View Deleted Reception</button>
         <button class="btn btn-primary" id="activeRecep" onclick="recepList.view('active')">View Active Reception</button>
     </div>

@@ -1,12 +1,12 @@
 <%@ include file = "../common/customBaseUrl.jsp" %>
-<%@ include file = "userModel.jsp" %>
+<%@ include file = "userModal.jsp" %>
 
 <div class="container my-3">
   <div class="row">
     <div class="col-sm-6"><h4>All User List</h4></div>
     <div class="col-sm-6 text-right">
         <button class="btn btn-success" type="button" class="" id="newUser" data-toggle="modal" 
-            onclick="userList.clearModel();" data-target="#userModel">Add User</button>
+            onclick="userList.clearModel();" data-target="#userModal">Add User</button>
         <button class="btn btn-primary" id="deletedUser" onclick="userList.view('deleted')">View Deleted User</button>
         <button class="btn btn-primary" id="activeUser" onclick="userList.view('active')">View Active User</button>
     </div>
